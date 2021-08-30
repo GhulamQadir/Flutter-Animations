@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutteranimation/Card.dart';
-import 'package:flutteranimation/CardsAnimation.dart';
+import 'package:flutteranimation/FadeInImage.dart';
 import 'package:flutteranimation/animatedcontainer.dart';
 
 void main() {
@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CardAnimation(),
+      home: FadeinImage(),
       routes: {
         "/contanimation": (context) => ContainerAnimation(),
-        // "/sliveranimation": (context) => CardsAnimation(),
         "/card-animation": (context) => CardAnimation(),
+        "/fadein-image": (context) => FadeinImage(),
       },
     );
   }
